@@ -21,6 +21,11 @@
   /* Spacing */
   --space-section:96px;
   --space-section-sm:78px;
+
+  /* Type scale */
+  --fs-body: clamp(16px, 1.1vw, 18px);
+  --fs-label: clamp(13px, .9vw, 14px);
+  --fs-meta: clamp(14px, .95vw, 15px);
 }
 
 *{ box-sizing:border-box; }
@@ -29,6 +34,7 @@ html{ scroll-behavior:smooth; }
 
 body{
   font-family:"Noto Sans JP", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size:var(--fs-body);
   color:var(--text);
   line-height:1.9;
   background:
@@ -46,25 +52,29 @@ header{ scroll-margin-top: 92px; }
 .narrow{ width:min(900px, 92vw); margin:0 auto; }
 
 .stack > span{ display:block; }
-.center{ text-align:center; }
-
+.center{ text-align:left; }
 .spaced{
   letter-spacing:.26em;
   text-transform:uppercase;
 }
 .jp{
   margin-left:.6em;
-  font-size:12px;
+  font-size:var(--fs-label);
   letter-spacing:.18em;
   opacity:.75;
 }
 
 /* Better line breaks */
-.hero-title, .bridge, .lead, .muted, .section-title{
+.hero-title, .bridge{
   line-break: strict;
   word-break: normal;
   overflow-wrap: normal;
   text-wrap: balance;
+}
+.muted{
+  line-break: strict;
+  word-break: normal;
+  overflow-wrap: normal;
 }
 
 /* Remove all underlines */
@@ -94,11 +104,9 @@ a{
   font-weight:900;
   letter-spacing:.28em;
   text-transform:uppercase;
-  font-size:13px;
+  font-size:var(--fs-meta);
   opacity:.9;
 }
-
-/* 1-line nav + scroll if overflow */
 .nav-links{
   display:flex;
   gap:10px;
@@ -143,9 +151,10 @@ a{
   line-height:1.05;
   letter-spacing:-.02em;
 }
+.hero-title span{ display:block; }
 .hero-sub{
   margin:0;
-  font-size:22px;
+  font-size:clamp(18px, 1.8vw, 22px);
   max-width:62ch;
   color:var(--muted);
 }
@@ -154,10 +163,10 @@ a{
   flex-wrap:wrap;
   gap:10px;
   align-items:center;
-  font-size:16px;
+  font-size:var(--fs-body);
 }
 .contact-inline .sep{ opacity:.45; }
-.tiny{ font-size:13px; }
+.tiny{ font-size:var(--fs-meta); }
 .muted{ color:var(--muted); }
 
 /* Sections */
@@ -171,21 +180,22 @@ a{
 }
 .section-head{ margin-bottom:30px; }
 .kicker{
-  font-size:12px;
+  font-size:var(--fs-label);
   opacity:.78;
   margin-bottom:14px;
 }
 .section-title{
-  font-size:32px;
+  font-size:clamp(28px, 3vw, 36px);
   font-weight:950;
   margin:0;
   letter-spacing:-.01em;
 }
 .lead{
-  font-size:28px;
+  font-size:clamp(24px, 2.2vw, 30px);
   font-weight:900;
   line-height:1.7;
   margin:18px 0 0;
+  text-align:left;
 }
 
 /* Bridge */
@@ -212,17 +222,18 @@ a{
   box-shadow: var(--shadow);
 }
 .card-kicker{
-  font-size:12px;
+  font-size:var(--fs-label);
   opacity:.78;
   margin-bottom:12px;
+  letter-spacing:.14em;
 }
 .card-title{
-  font-size:22px;
+  font-size:clamp(20px, 1.8vw, 24px);
   font-weight:950;
   margin-bottom:12px;
 }
 .card-body{
-  font-size:16px;
+  font-size:var(--fs-body);
   color:var(--muted);
 }
 
@@ -241,19 +252,19 @@ a{
   box-shadow: var(--shadow);
 }
 .feature-no{
-  font-size:12px;
+  font-size:var(--fs-label);
   opacity:.76;
   letter-spacing:.20em;
   text-transform:uppercase;
 }
 .feature-title{
-  font-size:22px;
+  font-size:clamp(20px, 1.8vw, 24px);
   font-weight:950;
   margin-top:12px;
 }
 .feature-desc{
   margin-top:12px;
-  font-size:16px;
+  font-size:var(--fs-body);
   color:var(--muted);
   line-height:1.85;
 }
@@ -261,7 +272,7 @@ a{
   margin:14px 0 0;
   padding-left:1.2em;
   color:var(--muted);
-  font-size:15px;
+  font-size:var(--fs-meta);
 }
 .bullets li{ margin:8px 0; }
 
@@ -280,18 +291,18 @@ a{
   box-shadow: 0 14px 45px rgba(0,0,0,.18);
 }
 .step-no{
-  font-size:12px;
+  font-size:var(--fs-label);
   opacity:.78;
   letter-spacing:.20em;
 }
 .step-title{
-  font-size:18px;
+  font-size:clamp(18px, 1.5vw, 20px);
   font-weight:950;
   margin-top:12px;
 }
 .step-desc{
   margin-top:10px;
-  font-size:15px;
+  font-size:var(--fs-meta);
   color:var(--muted);
 }
 
@@ -310,12 +321,12 @@ a{
   box-shadow: var(--shadow);
 }
 .person-name{
-  font-size:22px;
+  font-size:clamp(20px, 1.8vw, 24px);
   font-weight:950;
 }
 .person-role{
   margin-top:8px;
-  font-size:12px;
+  font-size:var(--fs-label);
   letter-spacing:.20em;
   text-transform:uppercase;
   opacity:.78;
@@ -337,7 +348,7 @@ a{
 .dot{ opacity:.45; }
 .contact-note{
   margin-top:10px;
-  font-size:13px;
+  font-size:var(--fs-meta);
   color:var(--muted);
 }
 
@@ -352,7 +363,7 @@ a{
   padding-top:18px;
 }
 .fine{
-  font-size:12px;
+  font-size:var(--fs-label);
   opacity:.76;
 }
 
