@@ -54,6 +54,8 @@ header{ scroll-margin-top: 92px; }
 .stack > span{ display:block; }
 .center{ text-align:left; }
 .spaced{
+  font-family:"Cormorant Garamond", "Noto Sans JP", serif;
+  font-weight:800;
   letter-spacing:.26em;
   text-transform:uppercase;
 }
@@ -101,6 +103,7 @@ a{
   padding:14px 0;
 }
 .nav-brand{
+  font-family:"Cormorant Garamond", "Noto Sans JP", serif;
   font-weight:900;
   letter-spacing:.28em;
   text-transform:uppercase;
@@ -118,6 +121,9 @@ a{
   max-width: 100%;
 }
 .nav-links a{
+  font-family:"Cormorant Garamond", "Noto Sans JP", serif;
+  font-weight:700;
+  letter-spacing:.06em;
   display:flex;
   align-items:baseline;
   padding:9px 12px;
