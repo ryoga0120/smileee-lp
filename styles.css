@@ -33,7 +33,7 @@ html,body{ margin:0; padding:0; }
 html{ scroll-behavior:smooth; }
 
 body{
-  font-family:"Noto Sans JP", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-family:"Cormorant Garamond", "Noto Sans JP", serif;
   font-size:var(--fs-body);
   color:var(--text);
   line-height:1.9;
