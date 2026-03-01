@@ -7,7 +7,7 @@
 <meta content="外反母趾でも痛くない。おしゃれをあきらめないためのハイテクスニーカー。" name="description"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet"/>
 <link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
@@ -15,238 +15,259 @@
   <div class="container nav-inner">
     <a class="nav-brand" href="#hero">smileee</a>
     <div class="nav-links">
-      <a href="#problem">詳しく見る</a>
-      <a href="#solution">提供価値</a>
-      <a href="#technology">技術基盤</a>
-      <a href="#team">チーム体制</a>
-      <a href="#contact">Contact</a>
+      <a href="#problem" lang="en">About</a>
+      <a href="#issues" lang="en">Problem</a>
+      <a href="#solution" lang="en">Solution</a>
+      <a href="#story" lang="en">Story</a>
+      <a href="#contact" class="contact" lang="en">Contact</a>
     </div>
   </div>
 </nav>
 
-<header class="hero" id="hero">
-  <div class="container hero-inner">
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <div class="hero-media">
+      <img class="hero-model" src="/assets/名称未設定のデザイン.webp.png" alt="モデル着用イメージ"/>
+    </div>
     <div class="hero-content">
-      <h1 class="hero-title">外反母趾でも痛くない。<br/>おしゃれなハイテクスニーカー。</h1>
-      <p class="sub">足を我慢しない毎日へ。</p>
-      <p class="tech">3Dスキャン設計 × 医療発想インソール</p>
-      <a href="#contact" class="cta">連絡する</a>
+      <h1><span>外反母趾でも痛くない。</span><span>おしゃれなハイテクスニーカー。</span></h1>
+      <p class="hero-sub">オーダーメイドの"サンダル構造"インソール</p>
+      <a class="btn-primary" href="#contact">連絡する</a>
     </div>
   </div>
-</header>
+</section>
 
 <main>
-  <section class="section" id="problem">
+  <section id="problem" class="section problem">
     <div class="container">
-      <div class="section-heading">
-        <p class="section-number">01</p>
-        <h2 class="section-title">外反母趾の実態</h2>
-        <div class="section-line"></div>
+      <h2 class="section-title">
+        <span class="section-en" lang="en">About</span>
+        <span class="section-ja">外反母趾とは</span>
+      </h2>
+      <p class="condition-lead">
+        足の親指（母趾）が「くの字」に曲がる病気。<br/>
+        靴に当たると痛みが生じ、重症化すると歩行困難になる。
+      </p>
+      <div class="image-grid-two problem-images">
+        <img alt="外反母趾イメージ1" src="/外反母趾とは１.jpg"/>
+        <img alt="外反母趾イメージ2" src="/外反母趾とは２.jpg"/>
       </div>
-      <ul class="problem-list">
-        <li>母趾の変形</li>
-        <li>痛み</li>
-        <li>歩行困難</li>
-      </ul>
-      <div class="image-grid-two">
-        <img alt="外反母趾イメージ1" src="/assets/problem-1.jpg"/>
-        <img alt="外反母趾イメージ2" src="/assets/problem-2.jpg"/>
+      <h3 class="sub-title">主な要因</h3>
+      <div class="condition-causes cards">
+        <article class="cause">骨格遺伝</article>
+        <article class="cause">合わない靴</article>
       </div>
-      <div class="sub-block">
-        <h3 class="sub-title">主な原因（骨格・靴）</h3>
-        <div class="cause-grid">
-          <figure class="cause-card">
-            <img alt="骨格遺伝" src="/assets/cause-1.jpg"/>
-            <figcaption>骨格遺伝</figcaption>
-          </figure>
-          <figure class="cause-card">
-            <img alt="足に合わない靴" src="/assets/cause-2.jpg"/>
-            <figcaption>足に合わない靴</figcaption>
-          </figure>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-soft" id="market">
-    <div class="container">
-      <div class="section-heading">
-        <p class="section-number">02</p>
-        <h2 class="section-title">市場背景</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="two-col">
+      <div class="market-layout cards inline-market">
         <div class="market-chart-wrap">
-          <div aria-label="有病率31.6%" class="donut-chart">
-            <span>31.6%</span>
+          <div aria-label="国内女性有病率31.6%" class="donut-chart" role="img">
+            <div class="donut-center">
+              <p class="donut-label">国内女性有病率</p>
+              <p class="donut-value">31.6%</p>
+            </div>
           </div>
-          <p class="market-meta">有病率 31.6%</p>
         </div>
-        <img alt="生活シーン" class="market-image" src="/assets/market.jpg"/>
+        <div class="market-text">
+          <p class="market-message">日本の女性の約3人に1人が外反母趾に苦しんでいます。</p>
+          <p class="source-note">出典: Epidemiology and risk factors of hallux valgus in Japanese population: HAPPI study（整形外科ジャーナル）</p>
+        </div>
       </div>
-      <p class="source-note">出典</p>
     </div>
   </section>
 
-  <section class="section" id="issues">
+  <section id="issues" class="issues">
     <div class="container">
-      <div class="section-heading">
-        <p class="section-number">03</p>
-        <h2 class="section-title">顧客課題</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="issue-grid">
+      <h2 class="section-title">
+        <span class="section-en" lang="en">Problem</span>
+        <span class="section-ja">外反母趾を持つ人の課題</span>
+      </h2>
+      <div class="issues-grid">
         <article class="issue-card">
-          <p class="issue-mark">×</p>
-          <img alt="市販靴の不適合" src="/assets/issue-1.jpg"/>
-          <h3>市販靴の不適合</h3>
+          <div class="issue-kicker">01</div>
+          <h3 class="issue-title">市販の靴が、<br/>足に合わない。</h3>
+          <p class="issue-desc">同じサイズ表記でも、<br/>足幅や骨格の違いで痛みが出てしまう。</p>
         </article>
         <article class="issue-card">
-          <p class="issue-mark">×</p>
-          <img alt="デザイン制約" src="/assets/issue-2.jpg"/>
-          <h3>デザイン制約</h3>
+          <div class="issue-kicker">02</div>
+          <h3 class="issue-title">痛みを避けると、<br/>選べる靴が少ない。</h3>
+          <p class="issue-desc">履きたいデザインより、<br/>痛くないことを優先せざるを得ない。</p>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="section section-soft" id="solution">
+  <section class="section section-alt" id="solution">
     <div class="container">
       <div class="section-heading">
-        <p class="section-number">04</p>
-        <h2 class="section-title">提供価値</h2>
+        <h2 class="section-title">
+          <span class="section-en" lang="en">Solution</span>
+          <span class="section-ja section-ja-solution">足が痛くない、おしゃれなハイテクスニーカーを<br/>手の届く価格で。</span>
+        </h2>
         <div class="section-line"></div>
       </div>
-      <p class="lead-copy">足が痛くない × デザイン性 × 手の届く価格</p>
-      <div class="solution-wrap">
-        <img alt="歩行シーン" class="solution-main" src="/assets/solution-walk.jpg"/>
-        <img alt="商品詳細" class="solution-float" src="/assets/solution-shoe.jpg"/>
+      <div class="solution-layout">
+        <div class="solution-visual">
+          <div class="solution-wrap">
+            <figure class="solution-figure solution-figure-main">
+              <img alt="歩行シーン" class="solution-main" src="/assets/歩行シーン.jpg"/>
+              <figcaption class="solution-caption">外出を楽しめる毎日へ</figcaption>
+            </figure>
+            <figure class="solution-figure solution-figure-round">
+              <img alt="靴のイメージ" class="solution-float" src="/assets/靴イメージ.jpg"/>
+              <figcaption class="solution-caption">デザインも、履き心地も</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="solution-content">
+          <div class="answer-grid">
+            <article class="answer-card">
+              <p class="answer-label" lang="en"><span class="answer-icon" aria-hidden="true">✓</span>Fit</p>
+              <p class="answer-text">市販の規格ではなく、足形に合わせてフィット。</p>
+            </article>
+            <article class="answer-card">
+              <p class="answer-label" lang="en"><span class="answer-icon" aria-hidden="true">✓</span>Style</p>
+              <p class="answer-text">オーダーでも“履きたいデザイン”を諦めない。</p>
+            </article>
+            <article class="answer-card">
+              <p class="answer-label" lang="en"><span class="answer-icon" aria-hidden="true">✓</span>Comfort</p>
+              <p class="answer-text">圧迫・摩擦を減らし、痛みの起点を作らない設計。</p>
+            </article>
+          </div>
+          <p class="solution-tail">その実現のために、LiDARで足を3Dスキャンし、インソールを個別設計します。</p>
+          <a class="tech-link" href="#technology" lang="en">Learn how</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="product">
+  <section class="section section-white" id="product">
     <div class="container">
       <div class="section-heading">
-        <p class="section-number">05</p>
-        <h2 class="section-title">製品構造</h2>
+        <h2 class="section-title">
+          <span class="section-en" lang="en">Structure</span>
+          <span class="section-ja">インソールの仕組み</span>
+        </h2>
         <div class="section-line"></div>
       </div>
       <div class="product-layout">
-        <img alt="商品写真" class="product-main" src="/assets/product-shoe.jpg"/>
+        <img alt="製品イメージ" class="product-main" src="/assets/サンダル構造のインソール.png"/>
         <div class="product-info">
           <ol class="product-list">
-            <li>甲ベルト</li>
-            <li>支柱構造</li>
-            <li>母趾空間設計</li>
+            <li>甲のベルトで足を固定</li>
+            <li>支柱構造で足裏アーチを安定</li>
+            <li>拇趾部分の空間で接触を回避</li>
           </ol>
           <div class="product-diagrams">
-            <img alt="上部視点" src="/assets/product-top.png"/>
-            <img alt="側部視点" src="/assets/product-side.png"/>
+            <img alt="上部視点" src="/assets/上部視点.png"/>
+            <img alt="側部視点" src="/assets/側部視点.png"/>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section section-soft" id="technology">
+  <section class="section section-alt" id="technology">
     <div class="container">
       <div class="section-heading">
-        <p class="section-number">06</p>
-        <h2 class="section-title">技術基盤</h2>
+        <h2 class="section-title">
+          <span class="section-en" lang="en">Technology</span>
+          <span class="section-ja">LiDAR搭載の独自アプリ</span>
+        </h2>
         <div class="section-line"></div>
       </div>
       <div class="tech-block">
-        <h3 class="sub-title">LiDARアプリ</h3>
+        <p class="lidar-note">LiDAR・・・レーザー光を使用して対象物の距離や形状を高精度で測定する技術</p>
         <div class="two-col">
-          <img alt="アプリホーム" src="/assets/app-home.png"/>
-          <p class="tech-copy">スマートフォンで足形を高精度に計測し、足に合わせた設計データへ変換します。スキャンから設計まで一気通貫で進められます。</p>
+          <img alt="アプリホーム" src="/assets/アプリホーム.png"/>
+          <p class="tech-copy">スマートフォンで足形を高精度に計測し、<br/>足に合わせた設計データへ変換します。<br/>スキャンから設計まで一気通貫で進められます。</p>
         </div>
       </div>
       <div class="step-list">
         <article class="step-row">
-          <img alt="STEP1 足を複数角度からスキャン" src="/assets/app-step1.png"/>
+          <img alt="STEP1 足を複数角度からスキャン" src="/assets/アプリ①.png"/>
           <div>
             <p class="step-label">STEP1</p>
             <p>足を複数角度からスキャン</p>
           </div>
         </article>
         <article class="step-row">
-          <img alt="STEP2 3D設計" src="/assets/app-step2.png"/>
+          <img alt="STEP2 3D設計" src="/assets/アプリ②.png"/>
           <div>
             <p class="step-label">STEP2</p>
-            <p>3D設計</p>
+            <p>足形とインソールの3Dモデルデータを設計</p>
           </div>
         </article>
         <article class="step-row">
-          <img alt="STEP3 3Dプリント成形" src="/assets/app-step3.png"/>
+          <img alt="STEP3 3Dプリント成形" src="/assets/アプリ③.png"/>
           <div>
             <p class="step-label">STEP3</p>
-            <p>3Dプリント成形</p>
+            <p>設計データをもとにして3Dプリンターでインソールを成形</p>
           </div>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="section" id="story">
+  <section class="section section-white" id="story">
     <div class="container">
       <div class="section-heading">
-        <p class="section-number">07</p>
-        <h2 class="section-title">創業背景</h2>
+        <h2 class="section-title">
+          <span class="section-en" lang="en">Story</span>
+          <span class="section-ja">創業背景</span>
+        </h2>
         <div class="section-line"></div>
       </div>
       <div class="story-body">
-        <p><strong>私も外反母趾です。母もそうです。</strong></p>
-        <p>痛みを我慢するのが当たり前になっている現状。</p>
-        <p>足に合わせて設計できれば解決できる。</p>
-        <p>痛みを考えずに外出できる社会の実現。</p>
+        <p><strong>私も、外反母趾です。</strong>幼いころから、痛みと付き合ってきました。</p>
+        <p>欲しいデザインのスニーカーを買っても、歩けば痛くなる。結局、履けなくなる。その繰り返しでした。</p>
+        <p>だったら、自分でつくろう。そう思ったのが、はじまりです。</p>
+        <p>外反母趾は、遺伝の影響もあると言われています。同じ症状を持つ母と、昨年生まれた子どもと、三人でおそろいのスニーカーを履いて、一緒に歩ける日を。私は、本気でつくりたいと思っています。</p>
       </div>
       <img alt="創業者写真" class="story-image" src="/assets/story.jpg"/>
     </div>
   </section>
 
-  <section class="section" id="team">
+  <section class="section section-alt" id="team">
     <div class="container">
       <div class="section-heading">
-        <p class="section-number">08</p>
-        <h2 class="section-title">チーム体制</h2>
+        <h2 class="section-title">
+          <span class="section-en" lang="en">Team</span>
+          <span class="section-ja">メンバー</span>
+        </h2>
         <div class="section-line"></div>
       </div>
       <div class="team-grid">
         <article class="team-card">
-          <img alt="リーダー" src="/assets/team-1.jpg"/>
           <p class="team-role">リーダー</p>
+          <p class="team-name">大村彩美</p>
         </article>
         <article class="team-card">
-          <img alt="事業開発" src="/assets/team-2.jpg"/>
           <p class="team-role">事業開発</p>
+          <p class="team-name">大村秀</p>
         </article>
         <article class="team-card">
-          <img alt="エンジニア" src="/assets/team-3.jpg"/>
+          <p class="team-role">事業開発</p>
+          <p class="team-name">岸和田凌我</p>
+        </article>
+        <article class="team-card">
           <p class="team-role">エンジニア</p>
+          <p class="team-name">盛川英典</p>
         </article>
         <article class="team-card">
-          <img alt="デザイナー" src="/assets/team-4.jpg"/>
           <p class="team-role">デザイナー</p>
+          <p class="team-name">住谷茂恵美</p>
         </article>
         <article class="team-card">
-          <img alt="マーケター" src="/assets/team-5.jpg"/>
-          <p class="team-role">マーケター</p>
-        </article>
-        <article class="team-card">
-          <img alt="サポート" src="/assets/team-6.jpg"/>
-          <p class="team-role">サポート</p>
+          <p class="team-role">マーケッター</p>
+          <p class="team-name">築地海露穂</p>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="section contact-section" id="contact">
+  <section class="section section-white contact-section" id="contact">
     <div class="container contact-inner">
       <div class="section-heading contact-heading">
-        <p class="section-number">09</p>
-        <h2 class="section-title">Contact</h2>
+        <h2 class="section-title" lang="en">Contact</h2>
         <div class="section-line"></div>
       </div>
       <p class="contact-copy">プロジェクトに関心のある方は、お気軽にご連絡ください。</p>
@@ -259,7 +280,7 @@
               <circle cx="17.5" cy="6.8" fill="currentColor" r="1.2"></circle>
             </svg>
           </span>
-          <span class="contact-label">Instagram</span>
+          <span class="contact-label" lang="en">Instagram</span>
           <span class="contact-value">@アカウント名</span>
         </a>
         <a class="contact-btn" href="mailto:hello@example.com">
@@ -269,7 +290,7 @@
               <path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8"></path>
             </svg>
           </span>
-          <span class="contact-label">メール</span>
+          <span class="contact-label" lang="en">Mail</span>
           <span class="contact-value">hello@example.com</span>
         </a>
       </div>
@@ -280,7 +301,6 @@
 <footer class="footer">
   <div class="container footer-inner">
     <div class="fine">© 2026 smileee. All rights reserved.</div>
-    <div class="fine">No medical claims are made on this site.</div>
   </div>
 </footer>
 </body>
