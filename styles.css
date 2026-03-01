@@ -572,7 +572,13 @@ h2.section-title[lang="en"]{
   color:var(--ink-soft);
 }
 
-.story-body{ margin:0 0 22px; }
+.story-layout{
+  display:grid;
+  grid-template-columns:minmax(220px, 0.85fr) minmax(0, 1.15fr);
+  gap:24px;
+  align-items:start;
+}
+.story-body{ margin:0; }
 .story-body p{ margin:0 0 8px; }
 .story-body{
   font-size:clamp(17px, 1.35vw, 20px);
@@ -583,7 +589,8 @@ h2.section-title[lang="en"]{
   font-weight:700;
 }
 .story-image{
-  aspect-ratio:16 / 9;
+  aspect-ratio:3 / 4;
+  max-height:560px;
   border-radius:16px;
   box-shadow:var(--shadow);
 }
@@ -656,10 +663,54 @@ h2.section-title[lang="en"]{
 }
 .footer-inner{
   display:flex;
-  justify-content:space-between;
-  gap:12px;
-  flex-wrap:wrap;
+  flex-direction:column;
+  align-items:center;
+  gap:18px;
 }
+.footer-qr-wrap{
+  width:min(760px, 100%);
+  text-align:center;
+}
+.footer-qr-title{
+  margin:0 0 10px;
+  font-size:16px;
+  font-weight:700;
+  letter-spacing:.08em;
+  color:var(--brand-dark);
+}
+.footer-qr-grid{
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0, 1fr));
+  gap:14px;
+}
+.footer-qr-item{
+  margin:0;
+  display:grid;
+  gap:8px;
+  justify-items:center;
+}
+.footer-qr-image{
+  width:min(150px, 100%);
+  aspect-ratio:1 / 1;
+  object-fit:cover;
+  border-radius:12px;
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
+}
+.footer-qr-item figcaption{
+  font-size:13px;
+  color:var(--ink-soft);
+}
+.footer-mail{
+  margin:12px 0 0;
+  font-size:14px;
+  color:var(--ink-soft);
+}
+.footer-mail a{
+  color:var(--brand-dark);
+  text-decoration:none;
+}
+.footer-mail a:hover{ text-decoration:underline; }
 .fine{ margin:0; color:var(--ink-soft); font-size:13px; }
 
 @media (max-width:1024px){
@@ -753,7 +804,14 @@ h2.section-title[lang="en"]{
   .image-grid-two,
   .condition-causes,
   .product-diagrams{ grid-template-columns:1fr; }
+  .story-layout{ grid-template-columns:1fr; gap:14px; }
+  .story-image{
+    max-height:none;
+    width:min(360px, 100%);
+    margin:0 auto;
+  }
   .issue-card{ padding:22px; border-radius:14px; }
+  .footer-qr-grid{ grid-template-columns:repeat(2, minmax(0, 1fr)); }
   .contact-btn{
     grid-template-columns:24px 1fr;
     gap:8px 10px;
@@ -780,6 +838,8 @@ h2.section-title[lang="en"]{
   .market-chart-wrap{ padding:18px; }
   .step-label{ font-size:17px; }
   .step-row p:last-child{ font-size:16px; }
+  .footer-qr-grid{ grid-template-columns:1fr; }
+  .footer-qr-image{ width:min(180px, 100%); }
 }
 
 @media (max-width:420px){
