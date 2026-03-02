@@ -692,7 +692,10 @@ h2.section-title[lang="en"]{
 .footer-qr-image{
   width:min(150px, 100%);
   aspect-ratio:1 / 1;
-  object-fit:cover;
+  object-fit:contain;
+  object-position:center;
+  padding:6px;
+  background:#fff;
   border-radius:12px;
   border:1px solid var(--line);
   box-shadow:var(--shadow);
