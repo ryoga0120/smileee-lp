@@ -7,7 +7,7 @@
 <meta content="外反母趾でも痛くない。おしゃれをあきらめないためのハイテクスニーカー。" name="description"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&family=Pacifico&display=swap" rel="stylesheet"/>
 <link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
@@ -19,7 +19,6 @@
       <a href="#issues" lang="en">Problem</a>
       <a href="#solution" lang="en">Solution</a>
       <a href="#story" lang="en">Story</a>
-      <a href="#contact" class="contact" lang="en">Contact</a>
     </div>
   </div>
 </nav>
@@ -30,9 +29,8 @@
       <img class="hero-model" src="./assets/hero-model.png" alt="モデル着用イメージ"/>
     </div>
     <div class="hero-content">
-      <h1><span>外反母趾でも痛くない。</span><span>おしゃれなハイテクスニーカー。</span></h1>
+      <h1><span>外反母趾でも痛くない。</span><span>おしゃれな</span><span>ハイテクスニーカー。</span></h1>
       <p class="hero-sub">オーダーメイドの"サンダル構造"インソール</p>
-      <a class="btn-primary" href="#contact">連絡する</a>
     </div>
   </div>
 </section>
@@ -54,8 +52,22 @@
       </div>
       <h3 class="sub-title">主な要因</h3>
       <div class="condition-causes cards">
-        <article class="cause">骨格遺伝</article>
-        <article class="cause">合わない靴</article>
+        <article class="cause">
+          <span class="cause-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
+              <path d="M7 4c3 0 3 3 6 3s3-3 6-3M7 20c3 0 3-3 6-3s3 3 6 3M8 7h8M8 17h8M10 10h4M10 14h4" />
+            </svg>
+          </span>
+          <span class="cause-text">骨格遺伝</span>
+        </article>
+        <article class="cause">
+          <span class="cause-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
+              <path d="M3 16h18v3H3zM6 16l2-5h3l1 3 4 2M14 11h3M16 9h2" />
+            </svg>
+          </span>
+          <span class="cause-text">合わない靴</span>
+        </article>
       </div>
       <div class="market-layout cards inline-market">
         <div class="market-chart-wrap">
@@ -67,7 +79,7 @@
           </div>
         </div>
         <div class="market-text">
-          <p class="market-message">日本の女性の約3人に1人が外反母趾に苦しんでいます。</p>
+          <p class="market-message">日本の女性の<span class="market-highlight">約3人に1人</span>が外反母趾に苦しんでいます</p>
           <p class="source-note">出典: Epidemiology and risk factors of hallux valgus in Japanese population: HAPPI study（整形外科ジャーナル）</p>
         </div>
       </div>
@@ -83,13 +95,13 @@
       <div class="issues-grid">
         <article class="issue-card">
           <div class="issue-kicker">01</div>
-          <h3 class="issue-title">市販の靴が、<br/>足に合わない。</h3>
-          <p class="issue-desc">同じサイズ表記でも、<br/>足幅や骨格の違いで痛みが出てしまう。</p>
+          <h3 class="issue-title">市販の靴が<br/>足に合わない</h3>
+          <p class="issue-desc">同じサイズ表記でも<br/>足幅や骨格の違いで痛みが出てしまう</p>
         </article>
         <article class="issue-card">
           <div class="issue-kicker">02</div>
-          <h3 class="issue-title">痛みを避けると、<br/>選べる靴が少ない。</h3>
-          <p class="issue-desc">履きたいデザインより、<br/>痛くないことを優先せざるを得ない。</p>
+          <h3 class="issue-title">痛みを避けると<br/>選べる靴が少ない</h3>
+          <p class="issue-desc">履きたいデザインより<br/>痛くないことを優先せざるを得ない</p>
         </article>
       </div>
     </div>
@@ -100,7 +112,7 @@
       <div class="section-heading">
         <h2 class="section-title">
           <span class="section-en" lang="en">Solution</span>
-          <span class="section-ja section-ja-solution">足が痛くない、おしゃれなハイテクスニーカーを<br/>手の届く価格で。</span>
+          <span class="section-ja section-ja-solution">外反母趾でも痛くない。<br/>おしゃれなハイテクスニーカー。</span>
         </h2>
         <div class="section-line"></div>
       </div>
@@ -120,19 +132,15 @@
         <div class="solution-content">
           <div class="answer-grid">
             <article class="answer-card">
-              <p class="answer-label" lang="en"><span class="answer-icon" aria-hidden="true">✓</span>Fit</p>
-              <p class="answer-text">市販の規格ではなく、足形に合わせてフィット。</p>
+              <p class="answer-label" lang="en"><span class="answer-icon" aria-hidden="true">✓</span>Fit &amp; Comfort</p>
+              <p class="answer-text">足形に合わせた設計でフィットさせ、<br/>圧迫や摩擦を減らして痛みの起点を作らない</p>
             </article>
             <article class="answer-card">
               <p class="answer-label" lang="en"><span class="answer-icon" aria-hidden="true">✓</span>Style</p>
-              <p class="answer-text">オーダーでも“履きたいデザイン”を諦めない。</p>
-            </article>
-            <article class="answer-card">
-              <p class="answer-label" lang="en"><span class="answer-icon" aria-hidden="true">✓</span>Comfort</p>
-              <p class="answer-text">圧迫・摩擦を減らし、痛みの起点を作らない設計。</p>
+              <p class="answer-text">オーダーでも<br/>“履きたいデザイン”を諦めない</p>
             </article>
           </div>
-          <p class="solution-tail">その実現のために、LiDARで足を3Dスキャンし、インソールを個別設計します。</p>
+          <p class="solution-tail">その実現のために LiDARで足を3Dスキャンし インソールを個別設計します</p>
           <a class="tech-link" href="#technology" lang="en">Learn how</a>
         </div>
       </div>
@@ -149,18 +157,12 @@
         <div class="section-line"></div>
       </div>
       <div class="product-layout">
-        <img alt="製品イメージ" class="product-main" src="./assets/insole-structure.png"/>
-        <div class="product-info">
-          <ol class="product-list">
-            <li>甲のベルトで足を固定</li>
-            <li>支柱構造で足裏アーチを安定</li>
-            <li>拇趾部分の空間で接触を回避</li>
-          </ol>
-          <div class="product-diagrams">
-            <img alt="上部視点" src="./assets/top-view.png"/>
-            <img alt="側部視点" src="./assets/side-view.png"/>
-          </div>
+        <div class="product-notes" aria-label="インソールの仕組み説明">
+          <p><span class="note-no" aria-hidden="true">1</span>甲のベルト：前滑り/ブレを抑えて当たりを減らす</p>
+          <p><span class="note-no" aria-hidden="true">2</span>支柱構造：足裏アーチを支え荷重を分散、母趾付け根の負担を軽減</p>
+          <p><span class="note-no" aria-hidden="true">3</span>母趾空間：接触を避け痛点を作らない</p>
         </div>
+        <img alt="インソールの仕組み" class="product-main" src="./assets/insoleStructure.png"/>
       </div>
     </div>
   </section>
@@ -175,7 +177,7 @@
         <div class="section-line"></div>
       </div>
       <div class="tech-block">
-        <p class="lidar-note">LiDAR・・・レーザー光を使用して対象物の距離や形状を高精度で測定する技術</p>
+        <p class="lidar-note">LiDAR・・・レーザー光を使って対象物の距離や形状を高精度で測定する技術。<br>スマホでスキャンするだけで、足形の高精度なデータを取得できます。</p>
         <div class="two-col">
           <img alt="アプリホーム" src="./assets/app-home.png"/>
           <p class="tech-copy">スマートフォンで足形を高精度に計測し、<br/>足に合わせた設計データへ変換します。<br/>スキャンから設計まで一気通貫で進められます。</p>
@@ -217,12 +219,10 @@
         <div class="section-line"></div>
       </div>
       <div class="story-layout">
-        <img alt="創業者写真" class="story-image" src="./assets/founder.png"/>
+        <img alt="創業者写真" class="story-image" src="https://raw.githubusercontent.com/ryoga0120/smileee-lp/main/assets/founder.png"/>
         <div class="story-body">
-          <p><strong>私も、外反母趾です。</strong>幼いころから、痛みと付き合ってきました。</p>
-          <p>欲しいデザインのスニーカーを買っても、歩けば痛くなる。結局、履けなくなる。その繰り返しでした。</p>
-          <p>だったら、自分でつくろう。そう思ったのが、はじまりです。</p>
-          <p>外反母趾は、遺伝の影響もあると言われています。同じ症状を持つ母と、昨年生まれた子どもと、三人でおそろいのスニーカーを履いて、一緒に歩ける日を。私は、本気でつくりたいと思っています。</p>
+          <p>幼い頃から外反母趾の痛みと靴選びに悩んできました。<br/>試着では合うと思った靴でも、歩くうちに母趾が靴にあたり痛みがでます。<br/>オーダーメイドを含む多くの靴を試してきましたが、自分の足に合う靴と出逢えていません。<br/>「それなら、自分でつくろう。」<br/>そう思い、靴を作ることにしました。足の痛みを考えずに、外出を楽しめる世界を実現していきます。</p>
+          <p><strong>smileee代表　大村彩美</strong></p>
         </div>
       </div>
     </div>
@@ -243,78 +243,52 @@
           <p class="team-name">大村彩美</p>
         </article>
         <article class="team-card">
-          <p class="team-role">事業開発</p>
+          <p class="team-role">経営企画</p>
           <p class="team-name">大村秀</p>
         </article>
         <article class="team-card">
-          <p class="team-role">事業開発</p>
+          <p class="team-role">経営企画</p>
           <p class="team-name">岸和田凌我</p>
         </article>
         <article class="team-card">
-          <p class="team-role">エンジニア</p>
+          <p class="team-role">テックリード</p>
           <p class="team-name">盛川英典</p>
-        </article>
-        <article class="team-card">
-          <p class="team-role">デザイナー</p>
-          <p class="team-name">住谷茂恵美</p>
         </article>
         <article class="team-card">
           <p class="team-role">マーケッター</p>
           <p class="team-name">築地海露穂</p>
         </article>
+        <article class="team-card">
+          <p class="team-role">デザイナー</p>
+          <p class="team-name">住谷茂恵美</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <section class="section section-white contact-section" id="contact">
-    <div class="container contact-inner">
-      <div class="section-heading contact-heading">
-        <h2 class="section-title" lang="en">Contact</h2>
-        <div class="section-line"></div>
-      </div>
-      <p class="contact-copy">プロジェクトに関心のある方は、お気軽にご連絡ください。</p>
-      <div class="contact-actions">
-        <a class="contact-btn" href="https://www.instagram.com/ayami_sneakers/" rel="noreferrer" target="_blank">
-          <span class="contact-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
-              <rect fill="none" height="18" rx="5" ry="5" stroke="currentColor" stroke-width="1.8" width="18" x="3" y="3"></rect>
-              <circle cx="12" cy="12" fill="none" r="4" stroke="currentColor" stroke-width="1.8"></circle>
-              <circle cx="17.5" cy="6.8" fill="currentColor" r="1.2"></circle>
-            </svg>
-          </span>
-          <span class="contact-label" lang="en">Instagram</span>
-          <span class="contact-value">@ayami_sneakers</span>
-        </a>
-        <a class="contact-btn" href="mailto:smileee.25254@gmail.com">
-          <span class="contact-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
-              <rect fill="none" height="14" rx="2" ry="2" stroke="currentColor" stroke-width="1.8" width="18" x="3" y="5"></rect>
-              <path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8"></path>
-            </svg>
-          </span>
-          <span class="contact-label" lang="en">Mail</span>
-          <span class="contact-value">smileee.25254@gmail.com</span>
-        </a>
-      </div>
-    </div>
-  </section>
 </main>
 
 <footer class="footer">
   <div class="container footer-inner">
     <div class="footer-qr-wrap">
-      <p class="footer-qr-title" lang="en">Follow Us</p>
+      <p class="footer-qr-title" lang="en">Contact</p>
       <div class="footer-qr-grid">
         <figure class="footer-qr-item">
-          <img src="./assets/Instagram.jpg" alt="Instagram QRコード" class="footer-qr-image"/>
+          <a class="footer-qr-link" href="https://www.instagram.com/ayami_sneakers/?hl=ja" rel="noreferrer" target="_blank">
+            <img src="https://raw.githubusercontent.com/ryoga0120/smileee-lp/main/assets/ayami_sneakers_qr.png" alt="Instagram QRコード" class="footer-qr-image"/>
+          </a>
           <figcaption lang="en">Instagram</figcaption>
         </figure>
         <figure class="footer-qr-item">
-          <img src="./assets/X.jpg" alt="X QRコード" class="footer-qr-image"/>
+          <a class="footer-qr-link" href="https://x.com/smileee25254" rel="noreferrer" target="_blank">
+            <img src="https://raw.githubusercontent.com/ryoga0120/smileee-lp/main/assets/logo_X.webp" alt="Xロゴ" class="footer-qr-image"/>
+          </a>
           <figcaption lang="en">X</figcaption>
         </figure>
         <figure class="footer-qr-item">
-          <img src="./assets/line.jpg" alt="LINE QRコード" class="footer-qr-image"/>
+          <a class="footer-qr-link" href="https://lin.ee/G2s26hY" rel="noreferrer" target="_blank">
+            <img src="https://raw.githubusercontent.com/ryoga0120/smileee-lp/main/assets/logo_line.png" alt="LINEロゴ" class="footer-qr-image"/>
+          </a>
           <figcaption lang="en">LINE</figcaption>
         </figure>
       </div>
